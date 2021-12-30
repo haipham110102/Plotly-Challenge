@@ -56,9 +56,10 @@ function DrawBubblechart(sampleId) {
             x: otu_ids,
             y: sample_values,
             mode: "markers",
-            markers: {
+            marker: {
                 size: sample_values,
-                color: otu_ids
+                color: otu_ids,
+                colorscale: "Earth"
 
             },
             text: otu_labels
